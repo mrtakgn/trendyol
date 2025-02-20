@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        .container div{
+            border: 1px solid black;
+        }
+        @media screen and (min-width:300px) and (max-width:600px) {
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+            
+        }
+        .navbar{
+            width: 100%;
+            background-color: rgb(227, 121, 41);
+            color: white;
+        }
+        .navbar ul{
+            display: flex; 
+            list-style-type: none;
+            justify-content: space-between;
+
+        }
+        @media screen and (max-width:450px) {
+            .navbar li{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="sol">
+                <div class="icon"></div>
+            </div>
+            <div class="sag"><ul>
+                <li>anasayfa</li>
+                <li>hakkımızda</li>
+                <li>ilteişim</li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>Lorem.</div>
+        <div>Cupiditate!</div>
+        <div>At!</div>
+        <div>Dolorum.</div>
+        <div>Voluptates.</div>
+        <div>Lorem.</div>
+        <div>Cupiditate!</div>
+        <div>At!</div>
+        <div>Dolorum.</div>
+        <div>Voluptates.</div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/a85fc6bda4.js" crossorigin="anonymous"></script>
+</body>
+</html>

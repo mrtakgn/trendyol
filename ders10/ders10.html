@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablolar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table,td{
+            border: 1px solid black;
+            
+        }
+        table tr:nth-child(3) td:nth-child(1),tr:nth-child(3) td:nth-child(2){
+            display: none;
+        }
+        table:hover  tr:nth-child(3) td:nth-child(1){
+            display: inline-block;
+        }
+        .search-btn,
+input {
+    background: transparent;
+}
+
+
+    </style>
+
+    <!-- even-- çift sayılar
+    odd--tek sayılar tr:nth-child(even){} -->
+</head>
+<body>
+    <table>
+        <tr>
+            <th>isim</th>
+            <th>soyisim</th>
+            <th>yaş</th>
+        </tr>
+        <tr>
+            <td>murat akgün</td>
+            <td>10405566130</td>
+            <td>nurdan hanım</td>
+            
+        </tr>
+        <tr>
+            <td>murat akgün</td>
+            <td>10405566130</td>
+            <td>nurdan hanım</td>
+        </tr>
+        <tr>
+            <td>murat akgün</td>
+            <td>10405566130</td>
+            <td>nurdan hanım</td>
+        </tr>
+    </table>
+    <li class="search-bar">
+        <form action="" class="search-bar">
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+          <input placeholder="Search term..." type="text" />
+        </form>
+      </li>
+</body>
+</html>

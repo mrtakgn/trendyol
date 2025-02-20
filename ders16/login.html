@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        i{
+            font-size: 20px;
+        }
+        .login{
+            width: 400px;
+           
+            border: 1px solid black;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            width: 100%;
+            padding: 20px;
+            border: none;
+        }
+        
+        .btn{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+            gap: 5px;
+        }
+        .inputs{
+            width: 100%;
+            padding: 20px;
+        }
+        .inputs input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .forget{
+            padding: 20px;
+            text-align: end;
+        }   
+        .buttons
+        {
+            display: grid;
+            grid-template-areas: 
+            "giris giris"
+            "facebook google";
+            gap: 10px;
+            padding: 20px;
+        }
+        .buttons :nth-child(1)
+        {
+            background-color: peru;
+            color: white;
+            grid-area: giris;
+        }
+        .buttons :nth-child(2){
+            grid: facebook;
+        }
+        .buttons :nth-child(3){
+            grid: google;
+        }
+        .devam{
+            padding: 20px;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+       <div class="login">
+        <div class="btn">
+            <button>Giriş Yap</button>
+            <button>Üye Ol</button>
+        </div>
+        <div class="inputs">
+            <label for="">E-Posta</label>
+            <input type="email">
+            <label for="">Şifre</label>
+            <input type="password">
+        </div>
+        <div class="forget">
+            <a href="">Şifremi unuttum</a>
+        </div>
+        <div class="buttons">
+            <button>Giriş Yap</button>
+            <button>Facebook</button>
+            <button>Google</button>
+        </div>
+        <div class="devam">
+            <p>üye olmadan verilen siparişler için <a href="">tıklayınız</a></p>
+        </div>
+       </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a85fc6bda4.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

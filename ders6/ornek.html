@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            "bir iki uc"
+            ;
+            grid-template-columns: repeat(3,70px);
+        
+
+        }
+        .bir{
+            grid-area: bir;
+        }
+        .iki{
+            grid-area: iki;
+        }
+        .uc{
+            grid-area: uc;
+        }
+        /* .div4{
+            grid-area: div4;
+        }
+        .div5{
+            grid-area: div5;
+        }
+        .div6{
+            grid-area: div6;
+        }
+        .div7{
+            grid-area: div7;
+        }
+        .div8{
+            grid-area: div8;
+        }
+        .div9{
+            grid-area: div9;
+        }
+        .div10{
+            grid-area: div0;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bir">1</div>
+        <div class="iki">2</div>
+        <div class="uc">3</div>
+    </div>
+</body>
+</html>

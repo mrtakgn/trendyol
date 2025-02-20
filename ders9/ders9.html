@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+        }
+        div:hover{
+            background-color: red;
+        }
+        div:active{
+            background-color: aqua;
+        }
+        ul li:nth-child(5),li:last-child,li:first-child{
+            background-color: aqua;
+        }
+        li:not(.deneme,li:nth-child(2)){
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       li::before{
+        content: "başlangıç";
+       }
+       li::after{
+        content: "bitiş";
+       }
+       p::first-line{
+        color: red;
+        font-size: 30px;
+       }
+       p::first-letter{
+        color: blue;
+       }
+       p::selection{
+        color: white;
+        background-color: brown;
+       }
+       input::placeholder{
+        color: blue;
+       }
+       ul li::marker{
+        color: red;
+        font-size: 40px;
+        content: ":(<3";
+       }
+    </style>
+</head>
+<body>
+    <!-- CSS pseudo class -->
+     <!-- html ögelerinin belirli durumlarını secmek için kullanılır nornmal durumun otesinde özel bir durum hedeflemek için kullanılır -->
+  
+
+     <ul>
+        <li>Lorem.</li>
+        <li>Consequatur.</li>
+        <li>Nesciunt.</li>
+        <li>Ipsam!</li>
+        <li>Autem?</li>
+        <li>Temporibus?</li>
+        <li class="deneme">Rerum.</li>
+        <li>Quo.</li>
+        <li>Error.</li>
+        <li>Dolor.</li>
+     </ul>
+     <label for="">basketbol</label>
+     <input type="checkbox" name="" id="">
+     <label for="">futbol</label>
+     <input type="checkbox" name="" id="">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque?</p>
+     <input type="text" placeholder="mail adresi giriniz">
+</body>
+</html>
